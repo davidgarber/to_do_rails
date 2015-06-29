@@ -3,4 +3,10 @@ class ListsController < ApplicationController
     @lists = List.all
     render :index
   end
+ 
+
+  def show
+    @list = List.find(params[:id])
+    render :show
+  end
 end

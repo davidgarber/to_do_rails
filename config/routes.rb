@@ -1,3 +1,3 @@
 Rails.application.routes.draw do
-  resource :lists
+  resources :lists
 end
