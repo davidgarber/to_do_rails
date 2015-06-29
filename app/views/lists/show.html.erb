@@ -22,8 +22,8 @@
   <% end %>
 
 
-<p><%= link_to "Edit", edit_list_path(@list) %></p>
-<p><%= link_to "Delete", list_path(@list),
+<p><%= link_to "Add a task", new_list_task_path(@list) %></p>
+<p><%= link_to "Delete List", list_path(@list),
                          :data => {:confirm => "You sure?",
                                    :method => "delete"} %></p>
 
